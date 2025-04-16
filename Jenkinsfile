@@ -14,6 +14,11 @@ pipeline {
                 sh "docker build -t two-tier-flask-app ."
             }
         }
+        stage("Testing"){
+            steps{
+                echo "Testing the application"
+            }
+        }
         stage("Pushing to Docker hub"){
             steps{
                 withCredentials([usernamePassword(
