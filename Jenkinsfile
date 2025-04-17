@@ -53,7 +53,7 @@ pipeline {
                 subject:"Build Failed",
                 body: "Bad News: Your build was Failed!",
                 to: "mullamdz0501@gmail.com"
-            )!
+            )
         }
     }
 }
